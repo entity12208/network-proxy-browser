@@ -1,5 +1,5 @@
 const CONFIG = {
-  API_BASE_URL: "https://your-worker-name.your-account.workers.dev",
+  API_BASE_URL: "http://localhost:8787",
   STORAGE_KEYS: {
     AUTH_TOKEN: "proxy_browser_auth_token",
     USERNAME: "proxy_browser_username",
@@ -11,7 +11,11 @@ const CONFIG = {
     URL: ""
   },
   REQUEST_TIMEOUT: 30000,
-  DEBUG: false
+  DEBUG: false,
+  DEMO_LOGIN: {
+    username: "admin",
+    password: "admin"
+  }
 };
 
 function debug(message, data) {
